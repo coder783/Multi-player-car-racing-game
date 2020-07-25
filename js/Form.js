@@ -20,8 +20,6 @@ class Form{
 
       this.button.position((displayWidth - 250) /2, displayHeight/2);
 
-      this.reset.position(displayWidth - 250,40);
-
       this.button.mousePressed(()=>{
           this.input.hide();
           this.button.hide();
@@ -41,7 +39,7 @@ class Form{
       this.reset.mousePressed(()=>{
           game.update(0);
           player.updateCount(0); 
-          carsAtEnd.updateCarsAtEnd(0);   
+          Player.updateCarsAtEnd(0);   
       })
   }
   hide(){
@@ -54,10 +52,12 @@ class Form{
    showRank(){
     if(gameState == 2 && playerCount === 4){
       background("white");
+      this.reset.position(displayWidth - 250,40);
 
       for (var property in allPlayers) { 
 
         console.log(allPlayers);
+        
           
         if( allPlayers[property].rank == 1){
           this.playerRank1.html("1 : " + allPlayers[property].name);
