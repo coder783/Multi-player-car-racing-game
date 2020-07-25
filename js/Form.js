@@ -51,7 +51,7 @@ class Form{
 
    showRank(){
     if(gameState == 2 && playerCount === 4){
-      background("white");
+      background("bg_img");
       this.reset.position(displayWidth - 250,40);
 
       for (var property in allPlayers) { 
