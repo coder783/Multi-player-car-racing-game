@@ -89,11 +89,11 @@ class Game {
     }
 
     if(keyIsDown(UP_ARROW) && player.index !== null){
-      player.distance +=10
+      player.distance +=50
       player.update();
     }
 
-    if(player.distance > 3500){
+    if(player.distance > 4100){
       gameState = 2;
 
       player.rank += 1;
