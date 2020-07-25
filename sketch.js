@@ -22,7 +22,7 @@ function preload(){
   car4_img = loadImage("./images/car4.png");
   ground = loadImage("./images/ground.png");
 
-  bg_img = loadImage("tenor.gif");
+  bg_img = loadImage("./images/tenor.gif");
 }
 
 function setup(){
